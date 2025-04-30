@@ -1,5 +1,5 @@
-# yolo-utils
-Useful data utilities for Yolo.
+# yoloutils
+🐍 Useful data utilities for Yolo.
 
 
 ```python

@@ -1,5 +1,6 @@
-# yoloutils
-🐍 Useful data utilities for YOLO.
+## YoloUtils
+
+**YoloUtils** is a lightweight utilities for YOLO.
 
 
 ```python

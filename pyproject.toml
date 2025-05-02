@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+
+[project]
+name = "yoloutils"
+version = "0.0.1"
+description = "YoloUtils is a lightweight utilities for YOLO."
+readme = "README.md"
+authors = [{ name = "Kalinin Mitko", email = "kalinin.mitko@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["yolo", "dataset", "preparation", "computer vision", "deep learning"]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["pip-tools"]
+
+[project.urls]
+Homepage = "https://github.com/null-none/yoloutils"
+
+[tools.setuptools]
+packages = ["src"]

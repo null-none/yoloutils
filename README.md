@@ -2,27 +2,9 @@
 
 **YoloUtils** is a lightweight utilities for YOLO.
 
-
-```python
-import os
-from src.utils import YoloUtils
-
-utils = YoloUtils()
-
-# seg_to_bbox
-
-seg_info = "0 0.046875 0.369141 0.0644531 0.384766 0.0800781 0.402344 0.0898438 0.433594 0.0996094 0.460938 0.113281 0.484375 0.136719 0.507812 0.169922 0.509766 0.191406 0.494141 0.199219 0.470703 0.212891 0.447266 0.228516 0.425781 0.25 0.402344 0.267578 0.380859 0.277344 0.359375 0.285156 0.337891 0.285156 0.316406 0.269531 0.28125 0.263672 0.248047 0.265625 0.222656 0.261719 0.197266 0.255859 0.175781 0.248047 0.152344 0.234375 0.132812 0.210938 0.121094 0.191406 0.113281 0.175781 0.111328 0.158203 0.103516 0.136719 0.103516 0.117188 0.111328 0.105469 0.115234 0.0859375 0.119141 0.0703125 0.126953 0.0566406 0.134766 0.046875 0.144531 0.0371094 0.154297 0.0273438 0.169922 0.0234375 0.1875 0.0195312 0.205078 0.0195312 0.228516 0.0195312 0.242188 0.0195312 0.263672 0.0195312 0.285156 0.0214844 0.300781 0.0273438 0.316406 0.03125 0.332031 0.0332031 0.347656 0.0371094 0.359375"
-utils.seg_to_bbox(seg_info)
-
-# annotation_to_cv2
-
-input_folder = ".." # folder that includes .txt files
-output_folder = ".." # output folder that will be included new format ann files
-
-for filename in os.listdir(input_folder):
-    if filename.endswith(".txt"):
-        input_file = os.path.join(input_folder, filename)
-        output_file = os.path.join(output_folder, filename)
-        utils.annotation_to_cv2(input_file, output_file)
-
-```
+1. polygon_to_bbox
+2. polygon_to_yolo
+3. pixel_to_yolo
+4. seg_to_bbox
+5. center_size_to_bbox
+6. annotation_to_cv2

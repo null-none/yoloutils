@@ -2,6 +2,10 @@
 
 **YoloUtils** is a lightweight utilities for YOLO.
 
+```bash
+pip install yoloutils
+```
+
 1. polygon_to_bbox
 2. polygon_to_yolo
 3. pixel_to_yolo
